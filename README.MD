@@ -4,7 +4,7 @@ This repository hosts an Azure Function App Python code in order to get Google A
 
 ## Pre-requisites
 
-  * A Python 3.11 [Azure Function App](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview) 
+  * A Python 3.12 [Azure Function App](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview) 
   * A [Log Analytics Workspace](https://docs.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-overview) with Sentinel enabled on it.
   * A [custom Log Analytics table](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/create-custom-table) to store Google Alert Center logs.
   * A [DCE](https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/data-collection-endpoint-overview?tabs=portal) and [DCR](https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/data-collection-rule-overview) to receive logs from the Function App and send them into Sentinel.
@@ -12,7 +12,7 @@ This repository hosts an Azure Function App Python code in order to get Google A
   * A [Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview) to store Google secrets.
   * Function [Managed Identity](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview)
     with at least `Storage Blob Data Owner` right on the Storage Account for storing the state file, `Reader` on the 
-KeyVault to retrieve secrets.
+KeyVault to retrieve secrets, `Monitoring Metrics Publisher` on the DCR.
 
 ### Variables
 
