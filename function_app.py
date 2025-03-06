@@ -70,6 +70,7 @@ def check_env(env_vars):
 app = func.FunctionApp()
 
 
+@app.function_name(name="GoogleAlertCenter")
 @app.timer_trigger(
     schedule="0 */10 * * * *",
     arg_name="myTimer",
