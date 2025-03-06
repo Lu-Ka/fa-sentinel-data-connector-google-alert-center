@@ -5,3 +5,4 @@ azure-monitor-ingestion
 azure-storage-blob
 google-api-python-client
 python-dateutil
+cryptography==43.0.3
