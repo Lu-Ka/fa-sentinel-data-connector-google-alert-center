@@ -4,7 +4,7 @@ from azure.storage.blob import BlobServiceClient
 
 
 class Storage:
-    def __init__(self, storage_name, container, blob, creds):
+    def __init__(self, storage_name, container, blob):
         self.container = container
         self.blob = blob
 
